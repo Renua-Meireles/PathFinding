@@ -1,4 +1,4 @@
-### A Python visual tool for drawing different kinds of maze configurations and testing different algorithms to solve them.
+### A Python visual tool for drawing different kinds of maze configurations and testing different algorithms to solve them
 <img src="https://github.com/Renua-Meireles/PathFinding/blob/master/screenshots/draw_and_run.gif" width="420" height="280" />
 
 ### Features
@@ -18,10 +18,12 @@
 
  
 - Freely draw the shapes you want
+
 You can create blocks by **right-clicking** on nodes.
 <img src="https://github.com/Renua-Meireles/PathFinding/blob/master/screenshots/ss01.png" width="420" height="280" />
 
 - Delete unwanted blocks
+
 You can create blocks by **left-clicking** on nodes.
 <img src="https://github.com/Renua-Meireles/PathFinding/blob/master/screenshots/draw.gif" width="420" height="280" />
  
@@ -29,6 +31,7 @@ You can create blocks by **left-clicking** on nodes.
 - Window
 
 You can change several parameters at main.py file. Currently GUI class supports the following parameters: 
+
 ```
 width : int, optional
     The width of the window, by default 1000
@@ -43,7 +46,9 @@ node_size : int, optional
 fps : int, optional
     The amount of frames per second, by default 120
  ```
+ 
 In main.py file you can edit the GUI object creation passing as many parameters as you want, e.g.:
+
 ```python
 ...
 gui_fps = 120
@@ -51,9 +56,11 @@ path_finding_fps = 30 # FPS used during the PathFinding process.
 gui = Gui(width=400, height=200, padding=(0, 0, 5, 5), gap=5, node_size=50, fps=gui_fps)
 ...
 ```
+
 - Keyboard keys mapping
 
 Currently, you can start an algorithm by pressing **A for A***, **D for Depth-First**, and **B for Bread-First**, which's defined in main.py file:
+
 ```python
 ...
 search_mapping = {
@@ -63,18 +70,23 @@ search_mapping = {
 }
 ...
 ```
+
 You can change this freely by replacing pygame constants with other ones available like 
 **pygame.K_a, pygame.K_b, pygame.K_c, pygame.K_d, ..., etc**. See all available constants at [pygame's documentation](https://www.pygame.org/docs/ref/key.html)
 
 - Colors
 
 You can add new colors for each block function just by following **two steps**
+
 1- Adding new constant RGB Tuple in colors.py file (There also you will find the existent ones)
+
 ```python
 ...
 CUSTOM_COLOR = (122, 42, 177)
 ```
+
 2- Editing the node function in node.py file just by calling the name of your new color:
+
 ```python
 self.state_color_map = {
     "empty": colors.CUSTOM_COLOR,
