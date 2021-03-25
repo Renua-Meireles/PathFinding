@@ -8,11 +8,11 @@
 
 <img src="https://github.com/Renua-Meireles/PathFinding/blob/master/screenshots/aStar.gif" width="300" height="200" />
 
-**Depth-First Search**
+**Bread-First Search**
 
 <img src="https://github.com/Renua-Meireles/PathFinding/blob/master/screenshots/bread-first.gif" width="300" height="200" />
 
-**Bread-First Search**
+**Depth-First Search**
 
 <img src="https://github.com/Renua-Meireles/PathFinding/blob/master/screenshots/depth-first.gif" width="300" height="200" />
 
