@@ -20,11 +20,13 @@
 - Freely draw the shapes you want
 
 You can create blocks by **right-clicking** on nodes.
+
 <img src="https://github.com/Renua-Meireles/PathFinding/blob/master/screenshots/ss01.png" width="420" height="280" />
 
 - Delete unwanted blocks
 
 You can create blocks by **left-clicking** on nodes.
+
 <img src="https://github.com/Renua-Meireles/PathFinding/blob/master/screenshots/draw.gif" width="420" height="280" />
  
 ### Customize
